@@ -26,13 +26,13 @@ become of importance when you run into problems.
    DOMjudge works through a web interface that can be found at
    |baseurlteam|. See the two figures on the next page for
    an impression.
-   
+
    Solutions have to read all input from 'standard in' and write all
    output to 'standard out' (also known as console). You will never have
    to open (other) files. Also see our :ref:`code examples <codeexamples>`.
 
    You can submit solutions in two ways:
-   
+
    Command-line
      Use ``submit <filename>``. If your filename is of the form
      ``<problem>.<extension>`` where ``<problem>`` is the
@@ -41,7 +41,7 @@ become of importance when you run into problems.
      It will also try to auto-detect the main class (for Java and Kotlin) or the
      main file (for Python). You can override these auto-detections;
      for a complete reference of all options and examples, see ``submit --help``.
-   
+
    Web interface
      From your team page, |baseurlteam|, click the green **Submit**
      button in the menu bar. Select the files you want to submit.
@@ -50,11 +50,11 @@ become of importance when you run into problems.
      to auto-detect the main class (for Java and Kotlin) or the main file (for
      Python) from the file name. Double check that the guess is correct
      before submitting.
-   
+
    Viewing scores, submissions and sending and reading clarification
    requests and replies is done through the web interface at
    |baseurlteam|.
-    
+
 -----------------
 
 .. raw:: pdf
