@@ -141,7 +141,7 @@ class ProblemController extends BaseController
         $response->setCallback(function () use ($problemText) {
             echo $problemText;
         });
-        $response->headers->set('Content-Type', sprintf('%s; name="%s', $mimetype, $filename));
+        $response->headers->set('Content-Type', sprintf('%s', $mimetype));
         $response->headers->set('Content-Disposition', sprintf('inline; filename="%s"', $filename));
         $response->headers->set('Content-Length', strlen($problemText));
 
@@ -215,7 +215,7 @@ class ProblemController extends BaseController
         $response->setCallback(function () use ($content) {
             echo $content;
         });
-        $response->headers->set('Content-Type', sprintf('%s; name="%s', $mimetype, $filename));
+        $response->headers->set('Content-Type', sprintf('%s', $mimetype));
         $response->headers->set('Content-Disposition', sprintf('attachment; filename="%s"', $filename));
         $response->headers->set('Content-Length', strlen($content));
 
